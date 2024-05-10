@@ -17,7 +17,7 @@
 
 <br>
 
-> ## Opis Zadania
+## Opis Zadania
 Znaleźć najkrótszą ścieżkę w grafie za pomocą wybranego algorytmu.  
 
 - Graf ważony, min. 10 węzłów.
@@ -26,8 +26,9 @@ Znaleźć najkrótszą ścieżkę w grafie za pomocą wybranego algorytmu.
 
 <br>
 
-> ## Kod algorytmu
-Znajduje się w pliku ./121546_AiZ_zadanie4.js  
+## Kod algorytmu
+Znajduje się w pliku `./121546_AiZ_zadanie4.js`
 
+<br>
 
 > ## Przebieg obliczeń
