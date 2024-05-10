@@ -10,17 +10,18 @@ function getMinDistanceVertex(distances, shortestPathTree) {
     return minDistanceVertex;
 }
 
-// Function to print the constructed distance array
-function printDistances(distances) {
-    console.log("Vertex \t\t Distance from Source");
-    for(let i = 0; i < numVertices; i++)
-        console.log(i + " \t\t " + distances[i]);
+// Function to print the shortest path
+function getShortestPath(parent, j) {
+    if (parent[j] == -1)
+        return [j];
+    return [...getShortestPath(parent, parent[j]), j];
 }
 
 // Dijkstra's single source shortest path algorithm for a graph
-function dijkstra(graph, sourceVertex) {
+function dijkstra(graph, sourceVertex, destinationVertex) {
     let distances = Array(numVertices).fill(Number.MAX_VALUE);
     let shortestPathTree = Array(numVertices).fill(false);
+    let parent = Array(numVertices).fill(-1);
     
     distances[sourceVertex] = 0; // Distance of source vertex from itself is always 0
     
@@ -29,10 +30,13 @@ function dijkstra(graph, sourceVertex) {
         shortestPathTree[u] = true; // Mark the picked vertex as processed
         
         for(let v = 0; v < numVertices; v++)
-            if (!shortestPathTree[v] && graph[u][v] != 0 && distances[u] != Number.MAX_VALUE && distances[u] + graph[u][v] < distances[v])
+            if (!shortestPathTree[v] && graph[u][v] != 0 && distances[u] != Number.MAX_VALUE && distances[u] + graph[u][v] < distances[v]) {
+                parent[v] = u;
                 distances[v] = distances[u] + graph[u][v];
+            }
     }
-    printDistances(distances);
+    let path = getShortestPath(parent, destinationVertex);
+    console.log(`Shortest path from node ${sourceVertex} to node ${destinationVertex} is ${path}, path weights ${distances[destinationVertex]}`);
 }
 
 // Driver code
@@ -48,4 +52,4 @@ let graph = [
     [ 0, 0, 2, 0, 0, 0, 6, 7, 0, 0 ],
     [ 10, 3, 0, 3, 0, 2, 0, 5, 0, 0 ] 
 ];
-dijkstra(graph, 0);
+dijkstra(graph, 0, 5);
