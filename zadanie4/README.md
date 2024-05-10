@@ -13,7 +13,7 @@
 
 # **Zadanie nr 4** 
 
-<div>
+</div>
 
 <br>
 
@@ -31,4 +31,3 @@ Znajduje się w pliku ./121546_AiZ_zadanie4.js
 
 
 > ## Przebieg obliczeń
-
