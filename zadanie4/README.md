@@ -1,3 +1,5 @@
+<div align="center">
+
 | Algorytmy i złożoność | laboratorium |
 |-----------------------|--------------|
 | SAN                   |              |
@@ -7,11 +9,8 @@
 | Data                  | 02.04.2024   |
 | Wersja                | 1.0          |
 
-
 <br>
-<div align="center">
 
 # **Zadanie nr 4** 
 
 <div>
-
