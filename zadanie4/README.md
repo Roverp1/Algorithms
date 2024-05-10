@@ -17,7 +17,7 @@
 
 <br>
 
-> ## Opis Zadania
+> ## Opis zadania
 Znaleźć najkrótszą ścieżkę w grafie za pomocą wybranego algorytmu.  
 
 - Graf ważony, min. 10 węzłów.
