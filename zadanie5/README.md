@@ -53,4 +53,4 @@ Znajduje się w pliku `./121546_AiZ_zadanie5.js`
 
 This program sorts an array in ascending order using the Bubble Sort algorithm. The `swap` function is a helper function used to swap two elements in an array. The `bubbleSort` function sorts an array and counts the number of swaps made. The sorted array and the number of swaps are then printed to the console. The process is repeated for two test arrays. 
 
-The Bubble Sort algorithm has a time complexity of $$O(n^2)$$, where $$n$$ is the number of elements in the array. This is because in the worst-case scenario, every pair of adjacent elements must be compared and possibly swapped. The space complexity is $$O(1)$$, as only a constant amount of additional space is required. This makes Bubble Sort an inefficient sorting algorithm for large datasets.
+The Bubble Sort algorithm has a time complexity of $$O(n^2)$$, where $$n$$ is the number of elements in the array. This is because in the worst-case scenario, every pair of adjacent elements must be compared and possibly swapped. The space complexity is $$O(1)$$, as only a constant amount of additional space is required.
