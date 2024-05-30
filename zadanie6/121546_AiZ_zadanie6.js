@@ -49,6 +49,12 @@ class BinaryTree {
     return result;
   }
 
+/*
+=================================================================================
+                 next two methods are balancing BST
+=================================================================================
+*/
+
   depthFirstTraversal(pushToArr = false, arrFromBST = []) {
     // recursively call function to left node 
     if (this.left) {
@@ -89,15 +95,15 @@ class BinaryTree {
 };
 
 const trr = new BinaryTree(1);
-// let numbers = [ 12, 20, 10, 13, 18, 22, 8, 11, 12, 14, 16, 19, 21, 25 ];
-let numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+let numbers = [ 12, 20, 10, 13, 18, 22, 8, 11, 12, 14, 16, 19, 21, 25 ];
+// let numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+// console.log(numbers.length); // check number of nodes that will be added to the tree (currently 14)
 
 for (let i = 0; i < numbers.length; i++) {
   trr.insert(numbers[i]);
 }
 
-// console.log(trr);
-console.log(trr.print())
-console.log(`trr.depthFirstTraversal() = ${trr.depthFirstTraversal(true)}`);
+console.log("unbalanced tree:\n", trr.print())
+// console.log(`trr.depthFirstTraversal() = ${trr.depthFirstTraversal(true)}`);
 const balancedTree = trr.balancingBST();
-console.log(balancedTree.print());
+console.log("balanced tree:\n", balancedTree.print());
