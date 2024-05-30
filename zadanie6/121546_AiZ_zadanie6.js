@@ -55,6 +55,8 @@ class BinaryTree {
 =================================================================================
 */
 
+  /* method that makes sorted array from current tree
+  by traversing it depth first in Inorder */
   depthFirstTraversal(pushToArr = false, arrFromBST = []) {
     // recursively call function to left node 
     if (this.left) {
@@ -77,7 +79,8 @@ class BinaryTree {
     if (pushToArr) return arrFromBST;
   }
 
- balancingBST(arr = this.depthFirstTraversal(true), start = 0, end = arr.length - 1, depth = 1) {
+  /* method that makes balanced BST from sorted array */ 
+  balancingBST(arr = this.depthFirstTraversal(true), start = 0, end = arr.length - 1, depth = 1) {
     // base case:
     if (start > end) return null;
 
