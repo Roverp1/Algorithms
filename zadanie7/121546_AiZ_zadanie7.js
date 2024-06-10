@@ -55,6 +55,7 @@ class LinkedList {
   }
 
   removeHead() {
+    this.length -= 1;
     const removedHead = this.head;
     if (!removedHead) {
       return;
@@ -174,6 +175,20 @@ class LinkedList {
     return slow;
   }
 
+  // this method used for test
+  getRandomNodesValue() {
+    // get random value in range of the LinkedList length
+    let indexOfRandomNode = Math.floor(Math.random() * (this.length + 1));
+    let currentNode = this.head;
+
+    // get to this random node
+    for (indexOfRandomNode; indexOfRandomNode > 1; indexOfRandomNode--) {
+      currentNode = currentNode.getNextNode();
+    }
+
+    return currentNode.data;
+  }
+
 }
 
 
@@ -181,44 +196,51 @@ class LinkedList {
 // Tests //
 /* ***** */
 const arrForTest = [7, 6, 5, 4, 3, 32, 1, 0, 42, 12, -11, -55, 42];
-const arrForTest2 = [0, 1, 2];
 let testLL = new LinkedList();
-let testLL2 = new LinkedList();
 
 for (let i = 0; i < arrForTest.length; i++) {
   testLL.addToTail(arrForTest[i]);
 }
 
-for (let i = 0; i < arrForTest2.length; i++) {
-  testLL2.addToTail(arrForTest2[i]);
-}
+console.log("***************************************************")
+console.log(`###\tTest with constant array of length ${arrForTest.length}\t###`)
+console.log("***************************************************\n")
 
 console.log("Original LinkedList:")
 testLL.printList();
 testLL = testLL.sortLL();
 console.log("Sorted LinkedList:")
 testLL.printList(); // expected output: <head> -55 -11 0 1 3 4 5 6 7 12 32 42 42 <tail>
-// console.log(testLL);
 
-// testLL.printList();
+const valueToSearch = 3; // edit to search for different value
+console.log("\nTesting search method")
+console.log(`Searching for node with value of ${valueToSearch}, results in:`);
+console.log(testLL.searchNodeByData(valueToSearch));
 
-// const elementToSearch = 3;
-// console.log(`Searching for element ${elementToSearch}, results in:`);
-// console.log(testLL.searchNodeByData(elementToSearch));
+/*
+//  Second test //
+*/
 
-// testLL.printList();
-// console.log(testLL.length);
-// testLL2.printList();
-// console.log(testLL2.length);
-// console.log(testLL2);
+let randomNumbersLL = new LinkedList();
+let amountOfNumbersToInsertInLL = 15; // enter your preferred length
+const rangeOfRandomNumbers = 1000; // edit to choose different range Of Random Numbers; 1000 for reading simplicity
 
-// let mergedLL = testLL.mergeLL(testLL, testLL2);
-// mergedLL.printList();
-// console.log(mergedLL.length)
-// mergedLL = mergedLL.sortLL();
+// inserting random numbers in LinkedList
+for (amountOfNumbersToInsertInLL; amountOfNumbersToInsertInLL > 0; amountOfNumbersToInsertInLL--) {
+  randomNumbersLL.addToTail(Math.floor(Math.random() * rangeOfRandomNumbers));
+}
 
-// while (mergedLL.head) {
-//   let currentNode = mergedLL.head;
-//   // console.log(currentNode);
-//   mergedLL.removeHead();
-// }
+// printig the results
+console.log("\n\n***********************************************************")
+console.log(`###\tTest with LinkedList with ${randomNumbersLL.length} random numbers\t###`)
+console.log("***********************************************************")
+console.log("Original LinkedList:")
+randomNumbersLL.printList();
+randomNumbersLL = randomNumbersLL.sortLL();
+console.log("Sorted LinkedList:")
+randomNumbersLL.printList();
+
+const randomValueToSearch = randomNumbersLL.getRandomNodesValue(); // edit to search for different value
+console.log("\nTesting search method")
+console.log(`Searching for node with value of ${randomValueToSearch}, results in:`);
+console.log(randomNumbersLL.searchNodeByData(randomValueToSearch));
