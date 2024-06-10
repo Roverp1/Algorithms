@@ -61,5 +61,5 @@ The `sortLL` method sorts the linked list, preparing it for efficient searching.
 3. Code of Algorithms  
 The code provided contains several algorithms, including the merge sort algorithm used to sort the linked list, and the search algorithm used to find a node with a specific data value.
 
-4. Course of Calculations (Creation, Preparation, Searching) 
+4. Course of Calculations (Creation, Preparation, Searching)  
 The course of calculations includes creating the linked list and adding nodes to it, sorting the linked list, and searching for a node with a specific data value.
