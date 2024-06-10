@@ -22,7 +22,7 @@
 2. Dodać min. 10 elementów o wartościach losowych.
 3. Przystosować stworzoną strukturę do wyszukiwania.
 4. Znaleźć przykładowy element.
-
+<br>
 - Na ocenę 5 praca powinna zawierać:
 1. Strukturę danych (10 elementów z liczbami losowymi).
 2. Przygotowanie struktury (sortowanie, równoważenie).
@@ -38,15 +38,28 @@ Znajduje się w pliku `./121546_AiZ_zadanie7.js`
 
 > ## Przebieg obliczeń
 
+1. Create a Data Structure to Store Values
+The program starts by defining a `Node` class and a `LinkedList` class. The `Node` class represents a single node in the linked list, containing data and a reference to the next node. The `LinkedList` class represents the entire list, containing methods to manipulate the list.
 
-1. Initialization: A new BinaryTree object `trr` is created with a value of `1`. The `numbers` array is initialized with a set of numbers.
+2. Add at Least 10 Elements with Random Values
+The program creates a new instance of the `LinkedList` class and adds elements to it using the `addToTail` method. This is done in a loop, either with a predefined array of test values or with randomly generated numbers.
 
-2. Insertion: The insert method is called for each number in the `numbers` array. This method checks if the number is less than the current node’s value. If it is, the method checks if a left child node exists. If not, a new BinaryTree object is created with the number and inserted as the left child. If a left child already exists, the method is recursively called on the left child. If the number is not less than the current node’s value, the same process is followed for the right child.
+3. Prepare the Created Structure for Searching
+The `LinkedList` class contains a `sortLL` method, which sorts the linked list using the merge sort algorithm. This method is called on the linked list instance, preparing it for efficient searching.
 
-3. Printing Unbalanced Tree: The `print` method is called on `trr` to print the unbalanced tree. This method recursively prints the value of each node and its children, indicating the structure of the tree.
+4. Find an Example Element
+The `searchNodeByData` method in the `LinkedList` class is used to search for a node with a specific data value in the linked list. This method is called with an example value to search for.
 
-4. Balancing the Tree: The `balancingBST` method is called on `trr` to create a balanced BST from the sorted array. This method finds the middle element of the array and makes it the root of the tree. It then recursively does the same for the left and right halves of the array, creating left and right child nodes, respectively.
+### Requirements for a Grade of 5
 
-5. Printing Balanced Tree: Finally, the `print` method is called on the balanced tree to print its structure.
+1. Data Structure (10 Elements with Random Numbers)
+This is represented by the `LinkedList` instance, which contains 10 nodes with random numbers as data.
 
-This code demonstrates how to create, print, and balance a binary search tree. The balancing process involves creating a sorted array from the BST and then building a new, balanced BST from that array. The resulting tree has the property that for each node, the heights of its left and right subtrees differ by at most 1, ensuring optimal search times.
+2. Preparation of the Structure (Sorting, Balancing)
+The `sortLL` method sorts the linked list, preparing it for efficient searching.
+
+3. Code of Algorithms
+The code provided contains several algorithms, including the merge sort algorithm used to sort the linked list, and the search algorithm used to find a node with a specific data value.
+
+4. Course of Calculations (Creation, Preparation, Searching)
+The course of calculations includes creating the linked list and adding nodes to it, sorting the linked list, and searching for a node with a specific data value.
