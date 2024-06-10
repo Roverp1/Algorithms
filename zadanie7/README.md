@@ -64,5 +64,6 @@ The code provided contains several algorithms, including the merge sort algorith
 4. Course of Calculations (Creation, Preparation, Searching)  
 The course of calculations includes creating the linked list and adding nodes to it, sorting the linked list, and searching for a node with a specific data value.
 
-*~P.s. index implementation for `Node`'s makes little sense, and will currently break after calling `.removeHead` method (i.e. after deleting any node from Lined List).
-Will be fixed only if required~*
+<br><br>
+*P.s. index implementation for `Node`'s makes little sense, and will currently break after calling `.removeHead` method (i.e. after deleting any node from Lined List).
+Will be fixed only if required*
