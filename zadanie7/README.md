@@ -24,10 +24,10 @@
 4. Znaleźć przykładowy element.
 <br>
 - Na ocenę 5 praca powinna zawierać:  <br>
-1. Strukturę danych (10 elementów z liczbami losowymi).  
-2. Przygotowanie struktury (sortowanie, równoważenie).  
-3. Kod algorytmów.  
-4. Przebieg obliczeń (tworzenie, przygotowanie, wyszukiwanie).  
+1. Strukturę danych (10 elementów z liczbami losowymi).  <br>
+2. Przygotowanie struktury (sortowanie, równoważenie).  <br>
+3. Kod algorytmów.  <br>
+4. Przebieg obliczeń (tworzenie, przygotowanie, wyszukiwanie).  <br>
 
 <br>
 
