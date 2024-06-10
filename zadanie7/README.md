@@ -23,11 +23,11 @@
 3. Przystosować stworzoną strukturę do wyszukiwania.
 4. Znaleźć przykładowy element.
 <br>
-- Na ocenę 5 praca powinna zawierać:
-1. Strukturę danych (10 elementów z liczbami losowymi).
-2. Przygotowanie struktury (sortowanie, równoważenie).
-3. Kod algorytmów.
-4. Przebieg obliczeń (tworzenie, przygotowanie, wyszukiwanie).
+- Na ocenę 5 praca powinna zawierać:  
+1. Strukturę danych (10 elementów z liczbami losowymi).  
+2. Przygotowanie struktury (sortowanie, równoważenie).  
+3. Kod algorytmów.  
+4. Przebieg obliczeń (tworzenie, przygotowanie, wyszukiwanie).  
 
 <br>
 
