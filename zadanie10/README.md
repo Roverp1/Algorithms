@@ -43,11 +43,11 @@ Homework contains two small programs that utilise Queue and Stack that I built w
 ### For Queue:  
 
 In file `./queue/Queue.js` located Queue data structure, that contains following methods:  
--`isEmpty` that returns boolean `true` if `Queue` is empty;  
--`hasRoom` that return boolean `true` if size of `Queue` less than it's maximum size, i.e. there is room push elements;  
--`enqueue` checks if `Queue` has room, and if it does, it adds a new element to the `Queue` utilizing LinkedList's method `addToTail`, and throws an error otherwise;  
--`dequeue` checks if `Queue` is not empty, and if it is, it deletes first element from the `Queue`, utilizing LinkedList's `removeHead` method, and throws an error otherwise;  
--property `size`, shows the size of the `Queue`;<br>  
+- `isEmpty` that returns boolean `true` if `Queue` is empty;  
+- `hasRoom` that return boolean `true` if size of `Queue` less than it's maximum size, i.e. there is room push elements;  
+- `enqueue` checks if `Queue` has room, and if it does, it adds a new element to the `Queue` utilizing LinkedList's method `addToTail`, and throws an error otherwise;  
+- `dequeue` checks if `Queue` is not empty, and if it is, it deletes first element from the `Queue`, utilizing LinkedList's `removeHead` method, and throws an error otherwise;  
+- property `size`, shows the size of the `Queue`;<br>  
 
 In file `./queue/runway.js` located program that will help the air traffic control move planes to the runway and allow those planes to take off in a FIFO order.
 Here is the sequential overview of program's calculations:
