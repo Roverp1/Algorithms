@@ -96,5 +96,4 @@ Znajduje się w pliku `./dijkstras.js`
    - Ensures the graph is connected and has sufficient complexity for testing Dijkstra's algorithm.
 
 ---
-<br>
 ![output of dijkstras.js](./pics/swappy-20240616-101438.png)
