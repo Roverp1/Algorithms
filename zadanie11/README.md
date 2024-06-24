@@ -31,7 +31,7 @@ Zaimplementować sposób synchronizacji pracy 2 wątków, modyfikujących wspól
 <br>
 
 > ## Kod algorytmu
-Znajduje się w pliku `./121546_AiZ_zadanie11.js`
+Znajduje się w pliku `./121546_AiZ_zadanie11.py`
 
 <br>
 
