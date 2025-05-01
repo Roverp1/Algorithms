@@ -6,7 +6,7 @@ const randomPrimeArr = lengthOfArr => {
 
     // generating arr with random numbers
     // if 0 in array - geometric mean will always be 0
-    
+
     let randomNum = Math.floor(Math.random() * 10000) + 1;
     if (!isPrime(randomNum)) {
       randomNum++;
@@ -19,7 +19,7 @@ const randomPrimeArr = lengthOfArr => {
 
 
 // funciton for checking if the number is prime
-function isPrime(num) { 
+function isPrime(num) {
 
   // every prime number is equal to 6k + r, except for 2 and 3
   // where k - is every positive interger
@@ -27,7 +27,7 @@ function isPrime(num) {
   if (num <= 0) return false;
   if (num <= 3) return true;
   if (num % 2 === 0 || num % 3 === 0) return false;
-  
+
   // i = 6k - 1, where k = 1 
   let i = 5;
   while (i <= Math.sqrt(num)) {
